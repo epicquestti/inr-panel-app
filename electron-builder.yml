@@ -1,0 +1,22 @@
+appId: com.inrpublicacoes.panel
+productName: "panel-inr"
+copyright: "Copyright © 2023 INR Publicações"
+artifactName: "${productName}-setup-${version}.${ext}"
+directories:
+  output: "dist"
+  buildResources: "resources"
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish:
+  provider: "github"
+  repo: "inr-panel-app"
+  owner: "epicquestti"
+  vPrefixedTagName: true
+  host: "github.com"
+  protocol: "https"
+  token: "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"
+  channel: "latest"
+  releaseType: "release"
